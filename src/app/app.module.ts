@@ -8,6 +8,7 @@ import { RegisterPageComponent } from './componentes/register-page/register-page
 import { LoginPageComponent } from './componentes/login-page/login-page.component';
 import { AprendaPageComponent } from './componentes/aprenda-page/aprenda-page.component';
 import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotFoundPageComponent } from './componentes/not-found-page/not-found-pa
     NotFoundPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
