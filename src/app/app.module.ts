@@ -9,6 +9,7 @@ import { LoginPageComponent } from './componentes/login-page/login-page.componen
 import { AprendaPageComponent } from './componentes/aprenda-page/aprenda-page.component';
 import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   ],
   imports: [
     BrowserModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
