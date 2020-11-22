@@ -10,6 +10,10 @@ import { AprendaPageComponent } from './componentes/aprenda-page/aprenda-page.co
 import { NotFoundPageComponent } from './componentes/not-found-page/not-found-page.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
+import { CaracteristicasComponent } from './componentes/caracteristicas/caracteristicas.component';
+import { RegistrarseComponent } from './componentes/registrarse/registrarse.component';
+import { SobrenosotrosComponent } from './componentes/sobrenosotros/sobrenosotros.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { AppRoutingModule } from './app-routing.module';
     RegisterPageComponent,
     LoginPageComponent,
     AprendaPageComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    CaracteristicasComponent,
+    RegistrarseComponent,
+    SobrenosotrosComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
