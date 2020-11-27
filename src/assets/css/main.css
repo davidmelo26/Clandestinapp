@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, nav,nav2, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, hgroup, menu, nav,nav2, section {
 	display: block;}
 
 body {
@@ -2116,7 +2116,7 @@ input, select, textarea {
 		top: 2.5em;
 		left: 0;
 		width: 100%;
-		text-align: center;
+		text-align:left;
 	}
 
 		#nav > ul {
@@ -2984,3 +2984,184 @@ input, select, textarea {
 						}
 
 	}
+	/*nav2*/
+	/* NAVBAR 2 */
+
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, nav2, section {
+    display: block;}
+    
+
+/* Nav */
+
+#nav2 {
+    position: absolute;
+    display: block;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: right;
+}
+
+    #nav2 > ul {
+        display: inline-block;
+        border-radius: 0.35em;
+        box-shadow: inset 0px 0px 1px 1px #e3d43d;
+        padding: 0 1.5em 0 1.5em;
+    }
+
+        #nav2 > ul > li {
+            display: inline-block;
+            text-align: center;
+            padding: 0 1.5em 0 1.5em;
+        }
+
+            #nav2 > ul > li > ul {
+                display: none;
+            }
+
+            #nav2 > ul > li > a, #nav > ul > li > span {
+                display: block;
+                color: #e3d43d;
+                color: #e3d43d;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 0.7em;
+                letter-spacing: 0.25em;
+                height: 5em;
+                line-height: 5em;
+                -moz-transition: all .25s ease-in-out;
+                -webkit-transition: all .25s ease-in-out;
+                -o-transition: all .25s ease-in-out;
+                -ms-transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+                outline: 0;
+            }
+
+            #nav2 > ul > li:hover > a {
+                color: #fff;
+            }
+
+            #nav2 > ul > li.active > a, #nav2 > ul > li.active > span {
+                color: #fff;
+            }
+
+    /* Medium */
+
+	#navPanel2, #titleBar {
+		display: none;
+    }
+    
+    		/* Nav2 */
+
+			#nav2 {
+				display: block;
+            }
+            
+		/* Nav */
+
+        #page-wrapper {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-transition: -moz-transform 0.5s ease;
+            -webkit-transition: -webkit-transform 0.5s ease;
+            -ms-transition: -ms-transform 0.5s ease;
+            transition: transform 0.5s ease;
+            padding-bottom: 1px;
+        }
+
+        #navPanel {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-transform: translateX(-275px);
+            -webkit-transform: translateX(-275px);
+            -ms-transform: translateX(-275px);
+            transform: translateX(-275px);
+            -moz-transition: -moz-transform 0.5s ease;
+            -webkit-transition: -webkit-transform 0.5s ease;
+            -ms-transition: -ms-transform 0.5s ease;
+            transition: transform 0.5s ease;
+            display: block;
+            height: 100%;
+            left: 0;
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            width: 275px;
+            z-index: 10002;
+            background: #242730 url("images/overlay.png");
+            box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+
+            #navPanel .link {
+                display: block;
+                color: rgba(255, 255, 255, 0.5);
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 0.85em;
+                letter-spacing: 0.15em;
+                text-decoration: none;
+                height: 44px;
+                line-height: 44px;
+                border-top: solid 1px rgba(255, 255, 255, 0.05);
+                margin: 0 15px 0 15px;
+            }
+
+                #nav2Panel .link:first-child {
+                    border-top: 0;
+                }
+
+            #nav2Panel .indent-1 {
+                display: inline-block;
+                width: 1em;
+            }
+
+            #nav2Panel .indent-2 {
+                display: inline-block;
+                width: 2em;
+            }
+
+            #nav2Panel .indent-3 {
+                display: inline-block;
+                width: 3em;
+            }
+
+            #nav2Panel .indent-4 {
+                display: inline-block;
+                width: 4em;
+            }
+
+            #nav2Panel .indent-5 {
+                display: inline-block;
+                width: 5em;
+            }
+
+            #nav2Panel .depth-0 {
+                color: #fff;
+            }
+
+        body.nav2Panel-visible #page-wrapper {
+            -moz-transform: translateX(275px);
+            -webkit-transform: translateX(275px);
+            -ms-transform: translateX(275px);
+            transform: translateX(275px);
+        }
+
+        body.nav2Panel-visible #titleBar {
+            -moz-transform: translateX(275px);
+            -webkit-transform: translateX(275px);
+            -ms-transform: translateX(275px);
+            transform: translateX(275px);
+        }
+
+        body.nav2Panel-visible #nav2Panel {
+            -moz-transform: translateX(0);
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }

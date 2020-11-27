@@ -34,7 +34,7 @@
 	form, label, legend, table, caption, tbody,
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
-	footer, header, hgroup, menu, nav, output, ruby,
+	footer, header, hgroup, menu, nav,nav2, output, ruby,
 	section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -45,7 +45,7 @@
 	}
 
 	article, aside, details, figcaption, figure,
-	footer, header, hgroup, menu, nav, section {
+	footer, header, hgroup, menu, nav, nav2, section {
 		display: block;
 	}
 
@@ -1722,6 +1722,217 @@
 body {
 scroll-behavior: smooth;
 }
+
+/* Nav2 */ /*inicia*/
+
+#nav2 {
+    position: absolute;
+    display: block;
+    top: 2.5em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    > ul {
+        display: inline-block;
+        border-radius: 0.35em;
+        box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+        padding: 0 1.5em 0 1.5em;
+
+        > li {
+            display: inline-block;
+            text-align: center;
+            padding: 0 1.5em 0 1.5em;
+
+            > ul {
+                display: none;
+            }
+
+            > a, > span {
+                display: block;
+                color: #eee;
+                color: rgba(255, 255, 255, 0.75);
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 0.7em;
+                letter-spacing: 0.25em;
+                height: 5em;
+                line-height: 5em;
+                -moz-transition: all .25s ease-in-out;
+                -webkit-transition: all .25s ease-in-out;
+                -o-transition: all .25s ease-in-out;
+                -ms-transition: all .25s ease-in-out;
+                transition: all .25s ease-in-out;
+                outline: 0;
+            }
+
+            &:hover {
+                > a {
+                    color: #fff;
+                }
+            }
+
+            &.active {
+                > a, > span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* Medium */
+
+#nav2Panel, #titleBar {
+    display: none;
+}
+
+		/* Nav2 */
+
+        #nav2 {
+            display: none;
+        }
+
+
+		/* Nav */
+
+        #page-wrapper {
+            @include vendor('backface-visibility', 'hidden');
+            @include vendor('transition', 'transform #{_duration(navPanel)} ease');
+            padding-bottom: 1px;
+        }
+
+        #titleBar {
+            @include vendor('backface-visibility', 'hidden');
+            @include vendor('transition', 'transform #{_duration(navPanel)} ease');
+            display: block;
+            height: 44px;
+            left: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: _misc(z-index-base) + 1;
+            background: none;
+
+            .title {
+                display: none;
+            }
+
+            .toggle {
+                @include icon(false, solid);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 44px;
+
+                &:before {
+                    @include vendor('transition', 'all .15s ease-in-out');
+                
+                    text-decoration: none;
+                    content: '\f0c9';
+                    font-size: 14px;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    display: block;
+                    width: 54px;
+                    height: 38px;
+                    line-height: 38px;
+                    text-align: center;
+                    color: rgba(255, 255, 255, 0.75);
+                    background-color: rgba(92, 95, 103, 0.5);
+                    border-radius: 0.25em;
+                }
+                &:active {
+                    &:before {
+                        background-color: rgba(92, 95, 103, 0.75);
+                    }
+                }
+            }
+        }
+
+        #nav2Panel {
+            @include vendor('backface-visibility', 'hidden');
+            @include vendor('transform', 'translateX(#{_size(nav2Panel) * -1})');
+            @include vendor('transition', ('transform #{_duration(nav2Panel)} ease'));
+            display: block;
+            height: 100%;
+            left: 0;
+            overflow-y: auto;
+            position: fixed;
+            top: 0;
+            width: _size(nav2Panel);
+            z-index: _misc(z-index-base) + 2;
+            background: #242730 url('images/overlay.png');
+            box-shadow: inset -3px 0px 4px 0px rgba(0, 0, 0, 0.1);
+
+            .link {
+                display: block;
+                color: rgba(255, 255, 255, 0.5);
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 0.85em;
+                letter-spacing: 0.15em;
+                text-decoration: none;
+                height: 44px;
+                line-height: 44px;
+                border-top: solid 1px rgba(255, 255, 255, 0.05);
+                margin: 0 15px 0 15px;
+
+                &:first-child {
+                    border-top: 0;
+                }
+            }
+
+            .indent-1 {
+                display: inline-block;
+                width: 1em;
+            }
+
+            .indent-2 {
+                display: inline-block;
+                width: 2em;
+            }
+
+            .indent-3 {
+                display: inline-block;
+                width: 3em;
+            }
+
+            .indent-4 {
+                display: inline-block;
+                width: 4em;
+            }
+
+            .indent-5 {
+                display: inline-block;
+                width: 5em;
+            }
+
+            .depth-0 {
+                color: #fff;
+            }
+        }
+
+        body {
+            &.nav2Panel-visible {
+                #page-wrapper {
+                    @include vendor('transform', 'translateX(#{_size(nav2Panel)})');
+                }
+
+                #titleBar {
+                    @include vendor('transform', 'translateX(#{_size(nav2Panel)})');
+                }
+
+                #nav2Panel {
+                    @include vendor('transform', 'translateX(0)');
+                }
+            }
+        }
+
+
+
 
 
 
