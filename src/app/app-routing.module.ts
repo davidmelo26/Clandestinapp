@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent},
-  { path: 'registrarse', component: RegisterPageComponent},
+  { path: 'registrese', component: RegisterPageComponent},
   { path: 'aprenda', component: AprendaPageComponent},
   { path: '**', component: NotFoundPageComponent},
 
