@@ -16,6 +16,7 @@ import { SobrenosotrosComponent } from './componentes/sobrenosotros/sobrenosotro
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FontAwesomeModule,
     AppRoutingModule,
     MaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

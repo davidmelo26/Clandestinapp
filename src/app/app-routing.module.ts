@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: '',           component: HomePageComponent},
   { path: 'registrese', component: RegisterPageComponent},
   { path: 'aprenda',    component: AprendaPageComponent},
-  { path: 'login',      component: LoginPageComponent},
+  { path: 'login', loadChildren: () => import('./componentes/login/login.module').then(m => m.LoginModule) },
   { path: '**',         component: NotFoundPageComponent}
 
 ];
