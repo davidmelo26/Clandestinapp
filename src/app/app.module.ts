@@ -14,6 +14,9 @@ import { CaracteristicasComponent } from './componentes/caracteristicas/caracter
 import { RegistrarseComponent } from './componentes/registrarse/registrarse.component';
 import { SobrenosotrosComponent } from './componentes/sobrenosotros/sobrenosotros.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
   imports: [
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
