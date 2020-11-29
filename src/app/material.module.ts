@@ -17,6 +17,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+
 
 const myModule = [
   MatCardModule,
@@ -35,7 +37,9 @@ const myModule = [
   MatPaginatorModule,
   MatSortModule,
   MatDialogModule,
-  MatSelectModule
+  MatSelectModule,
+  FormsModule,
+  ReactiveFormsModule
 ];
 
 @NgModule({
