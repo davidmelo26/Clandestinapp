@@ -1,4 +1,3 @@
-import { LoginPageComponent }     from './componentes/login-page/login-page.component';
 import { RegisterPageComponent }  from './componentes/register-page/register-page.component';
 import { NgModule }               from '@angular/core';
 import { RouterModule, Routes }   from '@angular/router';
