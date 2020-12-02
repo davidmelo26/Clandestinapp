@@ -76,7 +76,7 @@
 	}
 
 	body {
-		background: #202024;
+		background: black;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1167,7 +1167,7 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 5vh;
-		/*background-image: url("images/banner.jpg");*/
+		background-image: url("images/banner.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1184,7 +1184,7 @@
 		}
 
 		#banner h1 {
-			color: rgb(0, 0, 0);
+			color: rgb(255, 255, 255);
 			font-size: 5em;
 			font-weight: 400;
 			font-family: 'Source Sans Pro', sans-serif;
@@ -1291,7 +1291,7 @@
 			content: '';
 			background-color: #e3d43d;
 			display: block;
-			height: 40%;
+			height: 4%;
 			left: 0;
 			opacity: 100;
 			position: absolute;
@@ -1365,7 +1365,7 @@
 
 	#footer {
 		padding: 4em 0 2em 0;
-		background-color: #1b1b1f;
+		background-color: #e3d43d;
 		text-align: center;
 	}
 
@@ -1391,7 +1391,7 @@
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgb(0, 0, 0);
 			font-size: 0.9em;
 			margin: 0 0 2em 0;
 			padding: 0;
