@@ -1,3 +1,5 @@
+import { RegisterCompanyPageComponent } from './componentes/register-company-page/register-company-page.component';
+import { RegisterCustomerPageComponent } from './componentes/register-customer-page/register-customer-page.component';
 import { RegisterPageComponent }  from './componentes/register-page/register-page.component';
 import { NgModule }               from '@angular/core';
 import { RouterModule, Routes }   from '@angular/router';
@@ -8,11 +10,13 @@ import { NotFoundPageComponent }  from './componentes/not-found-page/not-found-p
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
-  { path: '',           component: HomePageComponent},
-  { path: 'registrese', component: RegisterPageComponent},
-  { path: 'aprenda',    component: AprendaPageComponent},
+  { path: '',                 component: HomePageComponent},
+  { path: 'registrese',       component: RegisterPageComponent},
+  { path: 'aprenda',          component: AprendaPageComponent},
   { path: 'login', loadChildren: () => import('./componentes/login/login.module').then(m => m.LoginModule) },
-  { path: '**',         component: NotFoundPageComponent}
+  { path: 'registro_cliente', component: RegisterCustomerPageComponent},
+  { path: 'registro_empresa', component: RegisterCustomerPageComponent},
+  { path: '**',               component: NotFoundPageComponent}
 
 ];
 

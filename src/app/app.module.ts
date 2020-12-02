@@ -16,6 +16,8 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { RegisterCustomerPageComponent } from './componentes/register-customer-page/register-customer-page.component';
+import { RegisterCompanyPageComponent } from './componentes/register-company-page/register-company-page.component';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { MatCardModule } from '@angular/material/card';
     CaracteristicasComponent,
     RegistrarseComponent,
     SobrenosotrosComponent,
-    ContactoComponent
+    ContactoComponent,
+    RegisterCustomerPageComponent,
+    RegisterCompanyPageComponent
   ],
   imports: [
     BrowserModule,
