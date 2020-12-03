@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'aprenda',          component: AprendaPageComponent},
   { path: 'login', loadChildren: () => import('./componentes/login/login.module').then(m => m.LoginModule) },
   { path: 'registro_cliente', component: RegisterCustomerPageComponent},
-  { path: 'registro_empresa', component: RegisterCustomerPageComponent},
+  { path: 'registro_empresa', component: RegisterCompanyPageComponent},
   { path: '**',               component: NotFoundPageComponent}
 
 ];
