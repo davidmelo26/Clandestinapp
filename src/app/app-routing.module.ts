@@ -1,3 +1,5 @@
+import { MainCustomerComponent } from './componentes/main-customer/main-customer.component';
+import { MainCompanyComponent } from './componentes/main-company/main-company.component';
 import { RegisterCompanyPageComponent } from './componentes/register-company-page/register-company-page.component';
 import { RegisterCustomerPageComponent } from './componentes/register-customer-page/register-customer-page.component';
 import { RegisterPageComponent }  from './componentes/register-page/register-page.component';
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'login', loadChildren: () => import('./componentes/login/login.module').then(m => m.LoginModule) },
   { path: 'registro_cliente', component: RegisterCustomerPageComponent},
   { path: 'registro_empresa', component: RegisterCompanyPageComponent},
+  { path: 'main-customer',    component: MainCustomerComponent},
+  { path: 'main-company',     component: MainCompanyComponent},
   { path: '**',               component: NotFoundPageComponent}
 
 ];

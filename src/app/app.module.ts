@@ -18,6 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { RegisterCustomerPageComponent } from './componentes/register-customer-page/register-customer-page.component';
 import { RegisterCompanyPageComponent } from './componentes/register-company-page/register-company-page.component';
+import { MainCustomerComponent } from './componentes/main-customer/main-customer.component';
+import { MainCompanyComponent } from './componentes/main-company/main-company.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { RegisterCompanyPageComponent } from './componentes/register-company-pag
     SobrenosotrosComponent,
     ContactoComponent,
     RegisterCustomerPageComponent,
-    RegisterCompanyPageComponent
+    RegisterCompanyPageComponent,
+    MainCustomerComponent,
+    MainCompanyComponent
   ],
   imports: [
     BrowserModule,
