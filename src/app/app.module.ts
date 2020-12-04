@@ -20,6 +20,8 @@ import { RegisterCustomerPageComponent } from './componentes/register-customer-p
 import { RegisterCompanyPageComponent } from './componentes/register-company-page/register-company-page.component';
 import { MainCustomerComponent } from './componentes/main-customer/main-customer.component';
 import { MainCompanyComponent } from './componentes/main-company/main-company.component';
+import { NavbarCompanyComponent } from './componentes/navbar-company/navbar-company.component';
+import { NavbarCustomerComponent } from './componentes/navbar-customer/navbar-customer.component';
 
 
 @NgModule({
@@ -37,7 +39,9 @@ import { MainCompanyComponent } from './componentes/main-company/main-company.co
     RegisterCustomerPageComponent,
     RegisterCompanyPageComponent,
     MainCustomerComponent,
-    MainCompanyComponent
+    MainCompanyComponent,
+    NavbarCompanyComponent,
+    NavbarCustomerComponent
   ],
   imports: [
     BrowserModule,
