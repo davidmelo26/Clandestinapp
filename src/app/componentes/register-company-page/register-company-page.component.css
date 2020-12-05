@@ -9,7 +9,7 @@ body {
   
   .box-form {
     margin: 0 auto;
-    width: 100%;
+    width: 95%;
     background: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
@@ -71,7 +71,7 @@ body {
     margin-left: 30px;
   }
   .box-form .right {
-    padding: 40px;
+    padding: 60px;
     overflow: hidden;
   }
   @media (max-width: 980px) {
@@ -80,7 +80,7 @@ body {
     }
   }
   .box-form .right h5 {
-    font-size: 4vmax;
+    font-size: 3vmax;
     line-height: 0;
   }
   .box-form .right p {
@@ -112,7 +112,7 @@ body {
   }
   .box-form .right button {
     float: right;
-    color: #fff;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     padding: 12px 35px;
     border-radius: 50px;
@@ -120,7 +120,7 @@ body {
     border: 0;
     outline: 0;
     box-shadow: 0px 4px 20px 0px #000000;
-    background-image: radial-gradient(farthest-corner at 50px 50px, #000000 25%, #e3d43d 100%);
+    background-color: #e3d43d;
   }
   
   label {
