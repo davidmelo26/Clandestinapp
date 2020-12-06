@@ -1,0 +1,58 @@
+
+body {
+    background-image: url("https://imageshack.com/i/pnhct74sp");
+    background-position: center ;
+    background-size: cover;
+  }
+
+div{
+    margin-top: none;
+}
+/* Footer */
+
+#footer {
+    padding: 4em 0 2em 0;
+    background-color: #e3d43d;
+    text-align: center;
+}
+
+    #footer .inner {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+        @media screen and (max-width: 980px) {
+
+            #footer .inner {
+                width: 75%;
+            }
+
+        }
+
+        @media screen and (max-width: 480px) {
+
+            #footer .inner {
+                width: 90%;
+            }
+
+        }
+
+    #footer .copyright {
+        color: rgb(0, 0, 0);
+        font-size: 0.9em;
+        margin: 0 0 2em 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 736px) {
+
+        #footer {
+            padding: 3em 0 1em 0;
+        }
+
+    }
+  .actions special{
+
+    border: none;
+  }
