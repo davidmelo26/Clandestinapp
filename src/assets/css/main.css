@@ -1903,6 +1903,7 @@ input, select, textarea {
 		.icon:before {
 			line-height: inherit;
 			font-size: 1.25em;
+		
 		}
 
 		.icon > .label {
@@ -1910,11 +1911,13 @@ input, select, textarea {
 		}
 
 		.icon.solid:before {
-			font-weight: 900;
+			font-weight: 400;
+			
 		}
 
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
+			 
 		}
 
 /* Box */
@@ -2179,6 +2182,7 @@ input, select, textarea {
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
 					color: #fff;
 				}
+
 
 	.dropotron {
 		background: #222835 url("images/overlay.png");
