@@ -264,7 +264,7 @@ nav {
 }
 
 .card {
-    background: white;
+    background: rgb(24, 24, 24);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 1px 5px #e3d43d;
@@ -304,7 +304,7 @@ nav {
     width: 50px;
 }
 
-.icon .fa-comments {
+.icon .fa-cloud {
     background: #ff8d72;
     background-image: linear-gradient(to bottom left,#ff8d72,#ff6491,#ff8d72);
     background-size: 210% 210%;
