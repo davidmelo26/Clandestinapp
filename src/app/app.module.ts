@@ -22,6 +22,10 @@ import { MainCustomerComponent } from './componentes/main-customer/main-customer
 import { MainCompanyComponent } from './componentes/main-company/main-company.component';
 import { NavbarCompanyComponent } from './componentes/navbar-company/navbar-company.component';
 import { NavbarCustomerComponent } from './componentes/navbar-customer/navbar-customer.component';
+import { DashboardComponent } from './componentes/dashboard/dashboard.component';
+import { StoreComponent } from './componentes/store/store.component';
+import { ShopcarComponent } from './componentes/shopcar/shopcar.component';
+import { ProfileComponent } from './componentes/profile/profile.component';
 
 
 @NgModule({
@@ -41,7 +45,11 @@ import { NavbarCustomerComponent } from './componentes/navbar-customer/navbar-cu
     MainCustomerComponent,
     MainCompanyComponent,
     NavbarCompanyComponent,
-    NavbarCustomerComponent
+    NavbarCustomerComponent,
+    DashboardComponent,
+    StoreComponent,
+    ShopcarComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
