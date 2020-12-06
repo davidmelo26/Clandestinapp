@@ -18,7 +18,7 @@ body {
     width: 100%;
     min-height: 100vh;
     border-top: 2px solid #97174D;
-    background: linear-gradient(#1e1e2f,#1e1e24);
+    background: black;
     transition: .5s;
     float: right;
 }
@@ -249,7 +249,7 @@ nav {
 
 /* Contenedor principal */
 .content {
-    padding: 80px 30px 30px 280px;
+    padding: 30px 30px 30px 30px;
     transition: 0.5;
 }
 
@@ -264,10 +264,10 @@ nav {
 }
 
 .card {
-    background: #27293d;
+    background: black;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 1px 20px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 5px #e3d43d;
 }
 
 .card-chart {
