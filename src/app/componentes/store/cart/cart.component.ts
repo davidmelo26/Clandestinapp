@@ -20,6 +20,7 @@ export class CartComponent implements OnInit {
   expandedHeight: string;
   cartTotal = 0;
   inherit: string;
+  changeDetectorRef: ChangeDetectorRef;
 
   constructor(private cartService: CartService, changeDetectorRef: ChangeDetectorRef) {
     this.changeDetectorRef = changeDetectorRef;

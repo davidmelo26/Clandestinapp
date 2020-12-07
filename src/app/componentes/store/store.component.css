@@ -1,5 +1,4 @@
-@import "/src/app/componentes/store/shared/_colors.scss";
- @import "/src/app/componentes/store/shared/_mixins.scss";
+
  .main-container {
 	 padding-top: 60px;
 }

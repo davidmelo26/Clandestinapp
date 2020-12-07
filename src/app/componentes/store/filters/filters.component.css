@@ -1,5 +1,4 @@
-@import "/src/app/componentes/store/shared/_colors.scss";
- @import "/src/app/componentes/store/shared/_mixins.scss";
+
  .filters {
 	 border: 1px solid #000;
 	 padding: 20px;

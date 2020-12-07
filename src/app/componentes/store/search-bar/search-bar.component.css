@@ -1,5 +1,4 @@
-@import "/src/app/componentes/store/shared/_colors.scss";
- @import "/src/app/componentes/store/shared/_mixins.scss";
+
  @-webkit-keyframes plop-glass {
 	 50% {
 		 -webkit-transform: scale(1.35);
