@@ -26,6 +26,7 @@ import { DashboardComponent } from './componentes/dashboard/dashboard.component'
 import { StoreComponent } from './componentes/store/store.component';
 import { ShopcarComponent } from './componentes/shopcar/shopcar.component';
 import { ProfileComponent } from './componentes/profile/profile.component';
+import { LoginPageComponent } from './componentes/login-page/login-page.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { ProfileComponent } from './componentes/profile/profile.component';
     DashboardComponent,
     StoreComponent,
     ShopcarComponent,
-    ProfileComponent
+    ProfileComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

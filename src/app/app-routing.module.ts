@@ -1,3 +1,4 @@
+import { LoginPageComponent }             from './componentes/login-page/login-page.component';
 import { ProfileComponent }               from './componentes/profile/profile.component';
 import { ShopcarComponent }               from './componentes/shopcar/shopcar.component';
 import { StoreComponent }                 from './componentes/store/store.component';
@@ -11,7 +12,7 @@ import { RouterModule, Routes }           from '@angular/router';
 import { HomePageComponent }              from './componentes/home-page/home-page.component';
 import { AprendaPageComponent }           from './componentes/aprenda-page/aprenda-page.component'; 
 import { NotFoundPageComponent }          from './componentes/not-found-page/not-found-page.component';
-               
+       
 
 import { CommonModule } from '@angular/common';
 
@@ -19,7 +20,7 @@ const routes: Routes = [
   { path: '',                 component: HomePageComponent},
   { path: 'registrese',       component: RegisterPageComponent},
   { path: 'aprenda',          component: AprendaPageComponent},
-  { path: 'login', loadChildren: () => import('./componentes/login/login.module').then(m => m.LoginModule) },
+  { path: 'login',            component: LoginPageComponent},
   { path: 'registro_cliente', component: RegisterCustomerPageComponent},
   { path: 'registro_empresa', component: RegisterCompanyPageComponent},
   { path: 'main-customer',    component: MainCustomerComponent},
