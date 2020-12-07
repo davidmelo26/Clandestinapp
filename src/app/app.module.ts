@@ -27,6 +27,13 @@ import { StoreComponent } from './componentes/store/store.component';
 import { ShopcarComponent } from './componentes/shopcar/shopcar.component';
 import { ProfileComponent } from './componentes/profile/profile.component';
 import { LoginPageComponent } from './componentes/login-page/login-page.component';
+import { CartComponent } from './componentes/store/cart/cart.component';
+import { FiltersComponent } from './componentes/store/filters/filters.component';
+import { ProductThumbnailComponent } from './componentes/store/product-thumbnail/product-thumbnail.component';
+import { SearchBarComponent } from './componentes/store/search-bar/search-bar.component';
+import { ShowcaseComponent } from './componentes/store/showcase/showcase.component';
+import { SortFiltersComponent } from './componentes/store/sort-filters/sort-filters.component';
+import { UrlFormComponent } from './componentes/store/url-form/url-form.component';
 
 
 @NgModule({
@@ -51,7 +58,14 @@ import { LoginPageComponent } from './componentes/login-page/login-page.componen
     StoreComponent,
     ShopcarComponent,
     ProfileComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    CartComponent,
+    FiltersComponent,
+    ProductThumbnailComponent,
+    SearchBarComponent,
+    ShowcaseComponent,
+    SortFiltersComponent,
+    UrlFormComponent
   ],
   imports: [
     BrowserModule,
