@@ -108,7 +108,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		color: #484d55;
+		color: black;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -131,7 +131,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 700;
-		color: #484d55;
+		color: black;
 	}
 
 	blockquote {
@@ -1497,7 +1497,7 @@ input, select, textarea {
 			}
 
 			table.default thead {
-				background: #484d55;
+				background: black;
 				color: #fff;
 			}
 
@@ -1510,7 +1510,7 @@ input, select, textarea {
 	form label {
 		display: block;
 		font-weight: 700;
-		color: #484d55;
+		color: black;
 		margin: 0.25em 0 0.5em 0;
 	}
 
