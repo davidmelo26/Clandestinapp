@@ -1,3 +1,4 @@
+import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
 import { ProfileCompanyComponent } from './componentes/profile-company/profile-company.component';
 import { LoginPageComponent }             from './componentes/login-page/login-page.component';
 import { ProfileComponent }               from './componentes/profile/profile.component';
@@ -13,7 +14,7 @@ import { RouterModule, Routes }           from '@angular/router';
 import { HomePageComponent }              from './componentes/home-page/home-page.component';
 import { AprendaPageComponent }           from './componentes/aprenda-page/aprenda-page.component'; 
 import { NotFoundPageComponent }          from './componentes/not-found-page/not-found-page.component';
-
+           
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
   { path: 'shopcar',          component: ShopcarComponent},
   { path: 'profile',          component: ProfileComponent},
   { path: 'profile-company', component: ProfileCompanyComponent},
+  { path: 'catalogo',         component: CatalogoComponent},
   { path: 'main-company',     component: MainCompanyComponent},
   { path: '**',               component: NotFoundPageComponent}
 
