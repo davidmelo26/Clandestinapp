@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { FilterService } from '../services/filter.service';
-import { Category } from '../model/category';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Category } from '../shared/category.model';
 
 @Component({
   selector: 'app-filters',
@@ -9,21 +8,44 @@ import { Category } from '../model/category';
 })
 export class FiltersComponent implements OnInit {
 
+  @Input()
   categories: Category[];
 
-  constructor(private filterService: FilterService) { }
+  @Input()
+  customFilters: any[];
 
-  ngOnInit() {
-    this.getCategories();
+  @Input()
+  priceFilters: any[];
+
+  @Output()
+  filterChange = new EventEmitter<any>();
+
+
+  showFilters = true;
+
+  sideShown = false;
+
+  constructor() { }
+
+  ngOnInit(): void {
   }
 
-  getCategories() {
-    this.filterService.getCategories().subscribe(categories => {
-      this.categories = categories;
+  reset(customFilters, priceFilters) {
+    this.customFilters = customFilters;
+    this.priceFilters = priceFilters;
+    this.showFilters = false;
+    setTimeout(() => {
+      this.showFilters = true;
     });
   }
 
-  filterBy(categoryId: string): void {
-
+  onInputChange($event, filter, type) {
+    const change = $event.target.checked ? 1 : -1;
+    this.filterChange.emit({
+      type: type,
+      filter: filter,
+      isChecked: $event.target.checked,
+      change: change
+    });
   }
 }

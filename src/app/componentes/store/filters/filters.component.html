@@ -1,12 +1,38 @@
-<section id="filter-header-wrapper">
-  <h2 id="filter-header">Categories</h2>
-  <img id="filter-icon" src="../../assets/img/filter-results-button.svg">
-</section>
-<section id="categories-wrapper">
-  <ul *ngFor="let category of categories">
-    <li class="categories-item" (click)="filterBy(category._id)">
-        <input type="checkbox" name="" id="{{category._id}}">
-        <label for="{{category._id}}">{{ category.name }}</label>
-    </li>
-  </ul>
-</section>
+<p>filters works!</p>
+<button type="button" class="toggle-btn" (click)="sideShown = true">Filtros</button>
+<div class="filters" [class.side-shown]="sideShown">
+  <button type="button" class="close-side-btn" (click)="sideShown = false">x</button>
+  <h5>Filtrar por categoría</h5>
+  <form *ngIf="showFilters">
+    <div class="category-filter filter-wrapper" *ngFor='let filter of categories'>
+      <label class="fake-checkbox">
+        <input type="checkbox" checked (change)='onInputChange($event, filter, "category")'>
+        <span class="square"><span class="fill"></span></span>
+        <span class="label">{{filter.name}}</span>
+        <span></span>
+      </label>
+    </div>
+  </form>
+  <h5>Filtrar por precio</h5>
+  <form *ngIf="showFilters">
+    <div class="custom-filter filter-wrapper" *ngFor='let filter of priceFilters'>
+        <label class="fake-checkbox">
+          <input type="radio" name="price" [checked]='filter.checked' (click)='onInputChange($event, filter, "price")'>
+          <span class="circle"><span class="fill"></span></span>
+          <span class="label">{{filter.name}}</span>
+          <span></span>
+        </label>
+    </div>
+  </form>
+  <h5>Filtros personalizados</h5>
+  <form *ngIf="showFilters">
+    <div class="custom-filter filter-wrapper" *ngFor='let filter of customFilters'>
+        <label class="fake-checkbox">
+          <input type="radio" name="custom" [checked]='filter.checked' (click)='onInputChange($event, filter, "custom")'>
+          <span class="circle"><span class="fill"></span></span>
+          <span class="label">{{filter.name}}</span>
+          <span></span>
+        </label>
+    </div>
+  </form>
+</div>
