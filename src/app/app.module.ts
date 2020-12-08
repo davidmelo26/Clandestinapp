@@ -35,6 +35,7 @@ import { ShowcaseComponent } from './componentes/store/showcase/showcase.compone
 import { SortFiltersComponent } from './componentes/store/sort-filters/sort-filters.component';
 import { UrlFormComponent } from './componentes/store/url-form/url-form.component';
 import { ProfileCompanyComponent } from './componentes/profile-company/profile-company.component';
+import { CatalogoComponent } from './componentes/catalogo/catalogo.component';
 
 
 @NgModule({
@@ -67,7 +68,8 @@ import { ProfileCompanyComponent } from './componentes/profile-company/profile-c
     ShowcaseComponent,
     SortFiltersComponent,
     UrlFormComponent,
-    ProfileCompanyComponent
+    ProfileCompanyComponent,
+    CatalogoComponent
   ],
   imports: [
     BrowserModule,
