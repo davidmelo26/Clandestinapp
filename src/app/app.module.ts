@@ -23,21 +23,18 @@ import { MainCompanyComponent } from './componentes/main-company/main-company.co
 import { NavbarCompanyComponent } from './componentes/navbar-company/navbar-company.component';
 import { NavbarCustomerComponent } from './componentes/navbar-customer/navbar-customer.component';
 import { DashboardComponent } from './componentes/dashboard/dashboard.component';
-// import { StoreComponent } from './componentes/store/store.component';
+import { StoreComponent } from './componentes/store/store.component';
 import { ShopcarComponent } from './componentes/shopcar/shopcar.component';
 import { ProfileComponent } from './componentes/profile/profile.component';
 import { LoginPageComponent } from './componentes/login-page/login-page.component';
-// import { CartComponent } from './componentes/store/cart/cart.component';
-// import { FiltersComponent } from './componentes/store/filters/filters.component';
-// import { ProductThumbnailComponent } from './componentes/store/product-thumbnail/product-thumbnail.component';
-// import { SearchBarComponent } from './componentes/store/search-bar/search-bar.component';
-// import { ShowcaseComponent } from './componentes/store/showcase/showcase.component';
-// import { SortFiltersComponent } from './componentes/store/sort-filters/sort-filters.component';
-// import { UrlFormComponent } from './componentes/store/url-form/url-form.component';
+import { CartComponent } from './componentes/store/cart/cart.component';
+import { FiltersComponent } from './componentes/store/filters/filters.component';
+import { ProductThumbnailComponent } from './componentes/store/product-thumbnail/product-thumbnail.component';
+import { SearchBarComponent } from './componentes/store/search-bar/search-bar.component';
+import { ShowcaseComponent } from './componentes/store/showcase/showcase.component';
+import { SortFiltersComponent } from './componentes/store/sort-filters/sort-filters.component';
+import { UrlFormComponent } from './componentes/store/url-form/url-form.component';
 import { ProfileCompanyComponent } from './componentes/profile-company/profile-company.component';
-import { FilterComponent } from './filter/filter.component';
-import { ProductDetailComponent } from './product-detail/product-detail.component';
-import { ProductListComponent } from './product-list/product-list.component';
 
 
 @NgModule({
@@ -59,21 +56,18 @@ import { ProductListComponent } from './product-list/product-list.component';
     NavbarCompanyComponent,
     NavbarCustomerComponent,
     DashboardComponent,
-    // StoreComponent,
+    StoreComponent,
     ShopcarComponent,
     ProfileComponent,
     LoginPageComponent,
-/*     CartComponent,
+    CartComponent,
     FiltersComponent,
     ProductThumbnailComponent,
     SearchBarComponent,
     ShowcaseComponent,
     SortFiltersComponent,
-    UrlFormComponent, */
-    ProfileCompanyComponent,
-    FilterComponent,
-    ProductDetailComponent,
-    ProductListComponent
+    UrlFormComponent,
+    ProfileCompanyComponent
   ],
   imports: [
     BrowserModule,
