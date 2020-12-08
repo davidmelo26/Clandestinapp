@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
 import { DATA } from './mock-data';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 
 import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/catch';

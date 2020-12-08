@@ -34,6 +34,7 @@ import { SearchBarComponent } from './componentes/store/search-bar/search-bar.co
 import { ShowcaseComponent } from './componentes/store/showcase/showcase.component';
 import { SortFiltersComponent } from './componentes/store/sort-filters/sort-filters.component';
 import { UrlFormComponent } from './componentes/store/url-form/url-form.component';
+import { ProfileCompanyComponent } from './componentes/profile-company/profile-company.component';
 
 
 @NgModule({
@@ -65,7 +66,8 @@ import { UrlFormComponent } from './componentes/store/url-form/url-form.componen
     SearchBarComponent,
     ShowcaseComponent,
     SortFiltersComponent,
-    UrlFormComponent
+    UrlFormComponent,
+    ProfileCompanyComponent
   ],
   imports: [
     BrowserModule,
