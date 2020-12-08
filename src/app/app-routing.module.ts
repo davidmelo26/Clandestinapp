@@ -1,8 +1,8 @@
-import { ProfileCompanyComponent } from './componentes/profile-company/profile-company.component';
+import { ProfileCompanyComponent }        from './componentes/profile-company/profile-company.component';
 import { LoginPageComponent }             from './componentes/login-page/login-page.component';
 import { ProfileComponent }               from './componentes/profile/profile.component';
 import { ShopcarComponent }               from './componentes/shopcar/shopcar.component';
-import { StoreComponent }                 from './componentes/store/store.component';
+// import { StoreComponent }                 from './componentes/store/store.component';
 import { MainCustomerComponent }          from './componentes/main-customer/main-customer.component';
 import { MainCompanyComponent }           from './componentes/main-company/main-company.component';
 import { RegisterCompanyPageComponent }   from './componentes/register-company-page/register-company-page.component';
@@ -16,6 +16,10 @@ import { NotFoundPageComponent }          from './componentes/not-found-page/not
 
 import { CommonModule } from '@angular/common';
 
+// import { CartComponent } from './cart/cart.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductListComponent } from './product-list/product-list.component';
+
 const routes: Routes = [
   { path: '',                 component: HomePageComponent},
   { path: 'registrese',       component: RegisterPageComponent},
@@ -24,10 +28,12 @@ const routes: Routes = [
   { path: 'registro_cliente', component: RegisterCustomerPageComponent},
   { path: 'registro_empresa', component: RegisterCompanyPageComponent},
   { path: 'main-customer',    component: MainCustomerComponent},
-  { path: 'store',            component: StoreComponent},
-  { path: 'shopcar',          component: ShopcarComponent},
+  { path: 'store',            component: ProductListComponent },
+  { path: 'cart',             component: CartComponent },
+  { path: 'products/:productId', component: ProductDetailComponent },
+  { path: 'products',         component: ProductListComponent },
   { path: 'profile',          component: ProfileComponent},
-  { path: 'profile-company', component: ProfileCompanyComponent},
+  { path: 'profile-company',  component: ProfileCompanyComponent},
   { path: 'main-company',     component: MainCompanyComponent},
   { path: '**',               component: NotFoundPageComponent}
 
